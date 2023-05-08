@@ -1,4 +1,2 @@
 #!/bin/bash
-
-# Run Python Code stored in the $PYCODE environment variable
 python3 -c "$PYCODE"
