@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 if __name__ == "__main__":
+    '''Handle basic arithmetics'''
     from calculator_1 import add, sub, mul, div
     import sys
     num_args = len(sys.argv) - 1
