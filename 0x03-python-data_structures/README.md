@@ -7,7 +7,7 @@ This project contains several scripts written in Python for practice purposes. T
 
 ## Files
 
-The following files were created as solutions to problems assiged:
+The following files were created as solutions to problems assigned:
 
 
 ### 0-print_list_integer.py
