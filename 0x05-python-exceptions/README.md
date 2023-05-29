@@ -38,7 +38,7 @@ To run the tasks, follow these steps:
 
 * Python 3.x
 
-## File Structure
+## File Structure :file:
 
 The repository has the following file structure:
 
