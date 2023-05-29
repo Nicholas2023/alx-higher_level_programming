@@ -1,4 +1,4 @@
-# Python Exceptions Tasks :happy:
+# Python Exceptions Tasks :smile:
 
 This repository contains solutions to the Python Exceptions Tasks. The tasks invlove working with exceptions in Python and implementing various functions to handle exceptions in different scenarios.
 
