@@ -31,10 +31,15 @@ class Node:
             raise TypeError("next_node must be a Node object")
 
 
+'''Singly linked list definition'''
+
+
 class SinglyLinkedList:
+    '''Attribute'''
     def __init__(self):
         self.head = None
 
+    '''Methods'''
     def sorted_insert(self, value):
         new_node = Node(value)
         if self.head is None:
