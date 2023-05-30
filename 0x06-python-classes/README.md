@@ -48,7 +48,7 @@ Extend the `Square` class to provide a string representation of the square objec
 
 1. Clone the repository
 ```
-$ git clone https://github.com/Nicholas2023/alx-higher_level_programming.git
+$ git clone https://github.com/Nicholas2023/alx-higher_level_programming/tree/main/0x06-python-classes.git
 ```
 
 2. Navigate to the appropriate task directory:
