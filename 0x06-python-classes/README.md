@@ -1,4 +1,4 @@
-# Python-Classes and Objects
+# Python-Classes and Objects :smile:
 
 This repository contains Python script that demonstrate the implementation of classes and objects in Python. Each script focuses on a specific task related to classes and objects.
 
