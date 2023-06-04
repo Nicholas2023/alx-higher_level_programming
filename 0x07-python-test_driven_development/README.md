@@ -1,4 +1,4 @@
-# Test-Driven Development with Python :smile:
+# Test-Driven Development with Python :wink:
 
 This rrepository contains Python scripts that demonstrate the concept of Test-Driven Development(TDD). Each script corresponds to a specific task and includes a set of test cases to ensure the correctness of the implented functions.
 
@@ -43,8 +43,8 @@ python -m unittest discover -p "*_test.py"
 
 This command will discover and execute all test files that match the pattern `*_test.py`. The test cases are defined in separate test files for each script and ensure the correctness of the implemented functions.
 
-## License
+## License :tada:
 
 This repository is licensed under the MIT License. You can find more details in the LICENSE file.
 
-Feel free to explore and learn about Test-Driven Development by examining the code and running the test cases. Enjoy! :smile:
+Feel free to explore and learn about Test-Driven Development by examining the code and running the test cases. Enjoy! :thumbsup:
