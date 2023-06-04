@@ -3,7 +3,7 @@
 This rrepository contains Python scripts that demonstrate the concept of Test-Driven Development(TDD). Each script corresponds to a specific task and includes a set of test cases to ensure the correctness of the implented functions.
 
 
-## List of Scripts
+## List of Scripts :smile:
 
 ### 1. add_integer.py: 
 
