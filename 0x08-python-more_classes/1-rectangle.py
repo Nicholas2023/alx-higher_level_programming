@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 """
-This module defines attributes of a Rectangle
-It define the attributes as height and with and
-uses getters and setters to assign it values
+Defines a rectangle class
 """
 
 
@@ -32,14 +30,13 @@ class Rectangle:
     def width(self, value):
         """
         Sets the width of the rectangle
-        Arg:
+        Args:
             value(int): The new width of the rectangle
         """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
-
         self.__width = value
 
     @property
@@ -53,12 +50,11 @@ class Rectangle:
     def height(self, value):
         """
         Sets the height of the rectangle
-        Arg:
+        Args:
             value(int): The new height of the rectangle
         """
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
-
         self.__height = value
