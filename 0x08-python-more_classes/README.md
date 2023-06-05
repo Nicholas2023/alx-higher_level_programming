@@ -31,7 +31,7 @@ Adds a message when an instance of `rectangle` is deleted using the `del` statem
 
 Adds a class attribute `number_of_instances` to keep track of the number of instances of the `Rectangle class.
 
-## Usage :eagle:
+## Usage :tada:
 
 To use any of the classes defined in the above files, you can import them into your Python code and create instances of the classes. Here's an example:
 
