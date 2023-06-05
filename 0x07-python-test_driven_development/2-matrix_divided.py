@@ -2,11 +2,12 @@
 """
 matrix_divided.py
 
-This module provides a function to divide all elements of a matrix by a given number.
+This module provides a function to divide all elements of a matrix.
 
-The function takes a matrix represented as a list of lists of integers or floats and a divisor as inputs.
+The function takes a matrix represented as a list of lists of...
+integers or floats and a divisor as inputs.
 
-It divides each element of the matrix by the divisor, rounding the result to 2 decimal places.
+It divides each element of the matrix by the div, rounding the result to 2 dp.
 
 The function returns a new matrix with the updated values.
 
@@ -41,7 +42,7 @@ def matrix_divided(matrix, div):
         'matrix must be a matrix (list of lists) of integers/floats',
         'Each row of the matrix must have the same size',
         'div must be a number',
-	'division by zero'
+        'division by zero'
     )
     size = [0, 0]
     new_matrix = []
