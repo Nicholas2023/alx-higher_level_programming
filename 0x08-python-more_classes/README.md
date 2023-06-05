@@ -45,7 +45,7 @@ print(my_rectangle.__dic__)  # {}
 
 You can also modify the attributes of the instances and access their methods:
 
-```
+```.py
 from 1-rectangle import Rectangle
 
 my_rectangle = Rectangle(2, 4)
