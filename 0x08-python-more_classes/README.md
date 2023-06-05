@@ -35,7 +35,7 @@ Adds a class attribute `number_of_instances` to keep track of the number of inst
 
 To use any of the classes defined in the above files, you can import them into your Python code and create instances of the classes. Here's an example:
 
-```
+```.py
 from 0-rectangle import Rectangle
 
 my_rectangle = Rectangle()
