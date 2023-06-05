@@ -1,4 +1,4 @@
-# MOre Classes and Objects in Python :smile:
+# More Classes and Objects in Python :smile:
 
 This repository contains Python code for working with classes and objects. Each file represents a different task, and they build upon othe to demonstarte various concepts related to classes and objects in Python.
 
