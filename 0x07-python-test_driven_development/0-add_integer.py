@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-"""A function that adds 2 integers
-Args:
-    a (int): The first number
-    b (int): The second number (Default 98)
+"""This is a package-level docstring for the add_integer module.
+The add_integer takes two args a and b. b is set to 98 by default
+It returns the sum of two integers after casting them to int
+If a or b is not an integer or float, a TypeError excp is raised
 """
 
 
