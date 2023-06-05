@@ -2,17 +2,26 @@
 >>> from importlib import import_module
 >>> add_integer = import_module('0-add_integer').add_integer
 
->>> # Permitted task arguments
+>>> # Testing integers as arguments
+
+>>> # Test 1:
+
 >>> add_integer(1, 2)
 3
+
+>>> # Test 2:
 
 >>> add_integer(100, -2)
 98
 
+>>> # Test 3:
+
 >>> add_integer(100.3, -2)
 98
->>> 
->>> # Invalid function arguments
+
+>>> # Exception Handling
+
+>>> # Test 4:
 
 >>> try:
 ...     add_integer(None)
@@ -21,6 +30,8 @@
 ... 
 a must be an integer
 
+>>> # Test 5:
+
 >>> try:
 ...     add_integer(4, "School")
 ... except Exception as e:
@@ -28,12 +39,16 @@ a must be an integer
 ... 
 b must be an integer
 
+>>> # Test 6:
+
 >>> try:
 ...     add_integer(float('inf'), float('inf'))
 ... except Exception as e:
 ...     print(e)
 ... 
 cannot convert float infinity to integer
+
+>>> # Test 7:
 
 >>> try:
 ...     add_integer(float('NaN'), 5)
