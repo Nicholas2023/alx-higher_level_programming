@@ -16,4 +16,4 @@ class BaseGeometry:
         Returns:
             None
         """
-        raise Exception("Area() is not implemented")
+        raise Exception("area() is not implemented")
