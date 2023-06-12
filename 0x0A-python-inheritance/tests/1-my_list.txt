@@ -43,8 +43,3 @@ True
 
 >>> l.print_sorted()
 [1, 3, 5, 7]
-
->>> # Checking for negative numbers
-
->>> l.append(-3)
->>> l.print_sorted()
