@@ -13,6 +13,7 @@ def is_same_class(obj, a_class):
         bool: True if the object is exactl;y an instance of
                 specified class, False otherwise
     """
+
     if type(obj) == a_class:
         return True
     return False
