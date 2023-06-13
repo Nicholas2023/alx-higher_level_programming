@@ -5,73 +5,73 @@ This repository contains Python scripts that demonstrate various inpu/output ope
 ## Task List
 
 ### 1. Read file
-	* Filename: `0-read_file.py`
-	* Description: Reads a text file (UTF8) and prints its content to stdout.
-	* Usage:
+* Filename: `0-read_file.py`
+* Description: Reads a text file (UTF8) and prints its content to stdout.
+* Usage:
 ```.py
 read_file("filename.txt")
 ```
 
 ### 2. Write to a file
-	* Filename: `1-write_file.py`
-	* Description: Writes a string to a text file (UTF8) and returns the number of characters written.
-	* Usage:
+* Filename: `1-write_file.py`
+* Description: Writes a string to a text file (UTF8) and returns the number of characters written.
+* Usage:
 ```.py
 nb_characters = write_file("filename.txt", "text")
 ```
 
 ### 3. Append to a file
-	* Filename: `2-append_write.py`
-	* Description: Appends a string to the end of a text file (UTF8) and returns the number of characters added.
-	* Usage:
+* Filename: `2-append_write.py`
+* Description: Appends a string to the end of a text file (UTF8) and returns the number of characters added.
+* Usage:
 ```.py
 nb_characters_added = append_write("filename.txt", "text")
 ```
 
 ### 4. To JSON string
-	* Filename: `3-to_json_string.py`
-	* Description: Returns the JSON representation of an object (string).
-	* Usage:
+* Filename: `3-to_json_string.py`
+* Description: Returns the JSON representation of an object (string).
+* Usage:
 ```.py
 json_string = to_json_string(obj)
 ```
 
 ### 5. From JSON string to object
-	* Filename: `4-from_json_string.py`
-	* Description: Returns an object (Python data structure) represented by a JSON string.
-	* Usage:
+* Filename: `4-from_json_string.py`
+* Description: Returns an object (Python data structure) represented by a JSON string.
+* Usage:
 ```.py
 obj = from_json_string(json_string)
 ```
 
 ### 6. Save Object to a file
-	* Filename: `5-save_to_json_file.py`
-	* Description: Writes an object to a text file using JSON representation.
-	* Usage:
+* Filename: `5-save_to_json_file.py`
+* Description: Writes an object to a text file using JSON representation.
+* Usage:
 ```.py
 save_to_json_file(obj, "filename.json")
 ```
 
 ### 7. Create object from a JSON file
-	* Filename: `6-load_from_json_file.py`
-	* Description: Adds command-line arguments to a Python list and saves them to a file in JSON format.
-	* Usage:
+* Filename: `6-load_from_json_file.py`
+* Description: Adds command-line arguments to a Python list and saves them to a file in JSON format.
+* Usage:
 ```.py
 obj = load_from_json_file("filename.json")
 ```
 
 ### 8. Load, add, save
-	* Filename: `7-add_item.py`
-	* Description: Adds command-line arguments to a Python list and saves them to a file in JSON format.
-	* Usage:
+* Filename: `7-add_item.py`
+* Description: Adds command-line arguments to a Python list and saves them to a file in JSON format.
+* Usage:
 ```bash
 ./7-add_item.py arg1 arg2 ...
 ```
 
 ### 9. Class to JSON
-	* Filename: `8-class_to_json.py`
-	* Description: Returns a dictionary description with a simple data structure (list, dictionary, string, integer, and boolean) for JSON serialization of an object.
-	* Usage:
+* Filename: `8-class_to_json.py`
+* Description: Returns a dictionary description with a simple data structure (list, dictionary, string, integer, and boolean) for JSON serialization of an object.
+* Usage:
 ```.py
 json_dict = class_to_json(obj)
 ```
