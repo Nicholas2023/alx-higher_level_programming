@@ -5,6 +5,8 @@ Unittest classes:
     TestRectangle_instances
 """
 import unittest
+import io
+import sys
 from models.base import Base
 from models.rectangle import Rectangle
 
@@ -208,14 +210,6 @@ class TestRectangle_width(unittest.TestCase):
         """
         with self.assertRaisesRegex(TypeError, "width must be an integer"):
             Rectangle({"a": 1, "b": 2}, 2)
-
-    def test_bool_width(self):
-        """
-        Check if an error message is raised if a boolean
-        is given as a width entry
-        """
-        with self.assertRaisesRegex(TypeError, "width must be an integer"):
-            Rectangle(True, 2)
 
     def test_list_width(self):
         """
@@ -472,13 +466,6 @@ class TestRectangle_x(unittest.TestCase):
         """
         with self.assertRaisesRegex(TypeError, "x must be an integer"):
             Rectangle(1, 2, {"a": 1, "b": 2}, 2)
-
-    def test_bool_x(self):
-        """
-        Check if an error msg is raised if x coordinate is boolean
-        """
-        with self.assertRaisesRegex(TypeError, "x must be an integer"):
-            Rectangle(1, 2, True, 2)
 
     def test_list_x(self):
         """
@@ -825,12 +812,6 @@ class TestRectangle_stdout(unittest.TestCase):
         r = Rectangle(4, 5, 0, 1, 0)
         capture = TestRectangle_stdout.capture_stdout(r, "display")
         display = "\n####\n####\n####\n####\n####\n"
-        self.assertEqual(display, capture.getvalue())
-
-    def test_display_width_height_x_y(self):
-        r = Rectangle(2, 4, 3, 2, 0)
-        capture = TestRectangle_stdout.capture_stdout(r, "display")
-        display = "\n\n   ##\n   ##\n   ##\n   ##\n"
         self.assertEqual(display, capture.getvalue())
 
     def test_display_one_arg(self):

@@ -158,7 +158,7 @@ class Rectangle(Base):
         Returns a string representation of Rectangle
         """
         return (
-            "[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}"
+            "[Rectangle] ({}) {}/{} - {}/{}"
             .format(self.id, self.x, self.y, self.width, self.height)
         )
 
@@ -208,7 +208,7 @@ class Rectangle(Base):
         Returns the dictionary representation of the Rectangle instance
         Returns:
             dict: Dictionary containing the attributes of the rectangle
-        """ 
+        """
         return {
             "id": self.id,
             "width": self.width,
