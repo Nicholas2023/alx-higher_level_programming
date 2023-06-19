@@ -131,3 +131,74 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
+
+    def area(self):
+        """
+        Compute and return the area value of the Rectangle instance
+        Returns:
+            (int) : Area of a rectangle
+        """
+        a = self.width * self.height
+        return a
+
+    def display(self):
+        """
+        Prints in stdout the Rectangle instance with '#'
+        """
+        if self.width == 0 or self.height == 0:
+            print("")
+            return
+        for _ in range(self.y):
+            print()
+        for _ in range(self.height):
+            print(" " * self.x + "#" * self.width)
+
+    def __str__(self):
+        """
+        Returns a string representation of Rectangle
+        """
+        return (
+            "[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}"
+            .format(self.id, self.x, self.y, self.width, self.height)
+        )
+
+    def update(self, *args, **kwargs):
+        """
+        Assigns an argument to each attribute
+        Args:
+            *args (int): No-keyword arguments to assign to the attributes
+            **kwargs (dict): New key/value pairs of attributes
+        """
+        if args and len(args) != 0:
+            a = 0
+            for arg in args:
+                if a == 0:
+                    if arg is None:
+                        self.__init__(self.width, self.height, self.x, self.y)
+                    else:
+                        self.id = arg
+                elif a == 1:
+                    self.width = arg
+                elif a == 2:
+                    self.height = arg
+                elif a == 3:
+                    self.x = arg
+                elif a == 4:
+                    self.y = arg
+                a += 1
+
+        elif kwargs and len(kwargs) != 0:
+            for k, v in kwargs.items():
+                if k == "id":
+                    if v is None:
+                        self.__init__(self.width, self.height, self.x, self.y)
+                    else:
+                        self.id = v
+                elif k == "width":
+                    self.width = v
+                elif k == "height":
+                    self.height = v
+                elif k == "x":
+                    self.x = v
+                elif k == "y":
+                    self.y = v
