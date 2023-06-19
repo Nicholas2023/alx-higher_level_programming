@@ -54,3 +54,27 @@ class Square(Rectangle):
             print()
         for _ in range(self.height):
             print(" " * self.x + "#" * self.width)
+
+    def update(self, *args, **kwargs):
+        """
+        Update the attributes of the Square
+        """
+        if args and len(args) > 0:
+            attr_names = ["id", "size", "x", "y"]
+            for i, arg in enumerate(args):
+                if i < len(attr_names):
+                    setattr(self, attr_names[i], arg)
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
+
+    def to_dictionary(self):
+        """
+        Return the dictionary representation of a Square
+        """
+        return {
+            "id": self.id,
+            "size": self.width,
+            "x": self.x,
+            "y": self.y
+        }
