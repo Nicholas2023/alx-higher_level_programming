@@ -8,6 +8,6 @@
 -- The db name will be passed as an arg of mysql cmd
 
 CREATE TABLE IF NOT EXISTS `force_name` (
-    `id` INT,
-    `name` VARCHAR(256) NOT NULL,
+    `id`   INT,
+    `name` VARCHAR(256) NOT NULL
 );
