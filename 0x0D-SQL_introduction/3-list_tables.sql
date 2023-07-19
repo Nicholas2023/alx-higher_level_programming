@@ -1,5 +1,2 @@
--- Accpt arguments from the table
-USE `mysql`;
-
 -- List all tables in the specified database
 SHOW TABLES;
