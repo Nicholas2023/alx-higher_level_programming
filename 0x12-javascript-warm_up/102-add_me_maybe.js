@@ -6,7 +6,7 @@ function addMeMaybe (number, theFunction) {
   theFunction(number);
 }
 
-//Export the function
+// Export the function
 module.exports = {
   addMeMaybe
 };
