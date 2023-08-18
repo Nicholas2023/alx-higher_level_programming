@@ -1,4 +1,3 @@
-```markdown
 # 0x0F. Python - Object-relational Mapping :smile:
 
 This project focuses on working with Object-Relational Mapping (ORM) using SQLAlchemy and MySQL. The project contains several Python scripts that interact with a MySQL database to perform various tasks related to states and cities.
@@ -186,4 +185,3 @@ Usage:
 ## Author
 
 Nicholas Otieno Odhiambo
-```
