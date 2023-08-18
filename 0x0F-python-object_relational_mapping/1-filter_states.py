@@ -33,7 +33,7 @@ if __name__ == "__main__":
     """
     Execute the SQL query to retrieve states starting with 'N'
     """
-    query = "SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id"
+    query = "SELECT * FROM `states` WHERE name LIKE 'N%' ORDER BY `id`"
     cursor.execute(query)
 
     """
