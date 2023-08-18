@@ -35,7 +35,7 @@ if __name__ == "__main__":
     """
     Create and execute the SQL query with user input
     """
-    query = "SELECT * FROM states WHERE name LIKE %s ORDER BY id ASC"
+    query = "SELECT * FROM states WHERE name = %s ORDER BY id"
     cursor.execute(query, (state_name,))
 
     """
