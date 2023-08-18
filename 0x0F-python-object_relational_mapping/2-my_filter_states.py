@@ -35,7 +35,7 @@ if __name__ == "__main__":
     """
     Create and execute the SQL query with user input
     """
-    query = "SELECT * FROM states WHERE name LIKE BINARY %s ORDER BY id"
+    query = "SELECT * FROM states WHERE name LIKE BINARY '{:s}' ORDER BY id"
     cursor.execute(query, (state_name,))
 
     """
