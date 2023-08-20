@@ -41,7 +41,7 @@ if __name__ == "__main__":
     Display the result
     """
     if first_state is None:
-        print(Nothing)
+        print("Nothing")
     else:
         print("{}: {}".format(first_state.id, first_state.name))
 
