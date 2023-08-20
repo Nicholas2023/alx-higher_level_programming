@@ -20,7 +20,7 @@ if __name__ == "__main__":
     Create the connection to the MySQL server
     """
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.format
-                     (username, password, db_name))
+                           (username, password, db_name))
 
     """
     Create a configured "Session" class
