@@ -50,15 +50,10 @@ if __name__ == "__main__":
     """
     results = cursor.fetchall()
 
-    if results:
-        """
-        Format cities into a comma-separated string
-        """
-        cities = ", ".join(row[0] for row in results)
-        print(cities)
-
-    else:
-        print("No cities found for the specified state.")
+    """
+    Format cities into a comma-separated string
+    """
+    print(", ".join([row[0] for row in results]))
 
     """
     Close cursor and database connection
