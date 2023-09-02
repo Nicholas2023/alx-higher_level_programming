@@ -8,23 +8,15 @@ import requests
 import sys
 
 if __name__ == "__main__":
-    if len(sys.argv) > 1:
-        q = sys.argv[1]
+    letter = "" if len(sys.argv) == 1 else sys.argv[1]
+    payload = {"q": letter}
 
-    else:
-        q = ''
-
-    _url = 'https://0.0.0.0:5000/search_user'
-    data = {'q': q}
-
+    r = requests.post("http://0.0.0.0:5000/search_user", data=payload)
     try:
-        response = requests.post(_url, data=data)
-        json_data = response.json()
-
-        if json_data:
-            print("[{}] {}".format(json_data['id'], json_data['name']))
-
-        else:
+        response = r.json()
+        if response == {}:
             print("No result")
+        else:
+            print("[{}] {}".format(response.get("id"), response.get("name")))
     except ValueError:
         print("Not a valid JSON")
