@@ -6,6 +6,7 @@ and prints the last 10 commits in the required format
 import requests
 import sys
 
+
 def fetch_commits(owner, repo):
     base_url = f"https://api.github.com/repos/{owner}/{repo}/commits"
     params = {'per_page': 10}
