@@ -15,6 +15,6 @@ if __name__ == "__main__":
     content_type = response.headers.get('content-type', '').lower()
 
     if response.status_code >= 400:
-        print(f"Error code: {response.status_code}")
+        print("Error code: {}".format(response.status_code))
     else:
         print(response.text)
