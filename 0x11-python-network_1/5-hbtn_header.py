@@ -13,7 +13,7 @@ if __name__ == "__main__":
     _url = sys.argv[1]
 
     """ Send a GET request to the URL """
-    response = requests.get(url)
+    response = requests.get(_url)
 
     """
     Get the value of the 'X-Request-Id' header from the response
