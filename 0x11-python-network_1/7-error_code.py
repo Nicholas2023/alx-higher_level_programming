@@ -9,12 +9,10 @@ import requests
 import sys
 
 if __name__ == "__main__":
-    _url = sys.argv[1]
+    url = sys.argv[1]
 
-    reponse = requests.get(_url)
-    content_type = response.headers.get('content-type', '').lower()
-
-    if response.status_code >= 400:
-        print("Error code: {}".format(response.status_code))
+    r = requests.get(url)
+    if r.status_code >= 400:
+        print("Error code: {}".format(r.status_code))
     else:
-        print(response.text)
+        print(r.text)
