@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """
-Here's a Python script that takes the repository name and owner name as arguments
-and prints the last 10 commits in the required format
+Here's a Python script that takes the repository name and
+owner name as arguments and prints the last 10 commits
+in the required format
 """
 import requests
 import sys
@@ -22,6 +23,7 @@ def fetch_commits(owner, repo):
             print(f"{sha}: {author_name}")
     except requests.exceptions.RequestException as e:
         print(f"Error: {e}")
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
